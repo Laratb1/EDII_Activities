@@ -46,7 +46,6 @@ void printTree(Bst *tree){
     }
 }
 
-
 Bst *freeTree(Bst *tree){
     if(!emptyTree(tree)){
         freeTree(tree->left);
@@ -55,6 +54,8 @@ Bst *freeTree(Bst *tree){
     }
     return NULL;
 }
+
+// ====== EXERCICIO 02 =======
 
 static int max(int a, int b){
     return (a > b) ? a : b;
@@ -67,3 +68,7 @@ int height(Bst *tree){
         return 1 + max(height(tree->left), height(tree->right));
     }
 }
+
+// ====== EXERCICIO 03 =======
+
+void rec_preorder(Bst *t, void (*visit)(Bst*));

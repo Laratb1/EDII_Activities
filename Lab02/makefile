@@ -1,5 +1,5 @@
 compile:
-	gcc -o exec bst.c 02.c
+	gcc -o exec bst.c 02.c -lm
 
 run:
 	./exec

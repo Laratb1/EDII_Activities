@@ -1,0 +1,20 @@
+Alturas:
+
+1) 48
+2) 50
+3) 53
+4) 51
+5) 49
+6) 48
+7) 52
+8) 49
+9) 52
+10) 47
+
+média = 49,9
+desvio padrão = 1,92093727123 
+
+1. Qual conclusão você pode obter pelo desvio padrão?
+2. Qual é a altura máxima e mínima de uma BST em função de N?
+3. Considerando os limites da questão anterior, a média experimental da altura da BST é
+boa ou ruim? Por quê?
