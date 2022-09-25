@@ -15,4 +15,6 @@ void printTree(Bst *tree);
 
 Bst *freeTree(Bst *tree);
 
+int height(Bst *tree);
+
 #endif 

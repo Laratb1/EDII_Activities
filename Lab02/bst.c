@@ -55,3 +55,15 @@ Bst *freeTree(Bst *tree){
     }
     return NULL;
 }
+
+static int max(int a, int b){
+    return (a > b) ? a : b;
+}
+
+int height(Bst *tree){
+    if(emptyTree(tree)){
+        return -1;
+    }else{
+        return 1 + max(height(tree->left), height(tree->right));
+    }
+}
