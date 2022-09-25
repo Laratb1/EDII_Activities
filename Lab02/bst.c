@@ -71,4 +71,31 @@ int height(Bst *tree){
 
 // ====== EXERCICIO 03 =======
 
-void rec_preorder(Bst *t, void (*visit)(Bst*));
+void preOrder(Bst *tree){
+    if(!emptyTree(tree)){
+        printf("%d ", tree->key);
+        printTree(tree->left);
+        printTree(tree->right);
+    }
+}
+
+void inOrder(Bst *tree){
+    if(!emptyTree(tree)){
+        printTree(tree->left);
+        printf("%d ", tree->key);
+        printTree(tree->right);
+    }
+}
+
+void posOrder(Bst *tree){
+    if(!emptyTree(tree)){
+        printTree(tree->right);
+        printTree(tree->left);
+        printf("%d ", tree->key);
+    }
+}
+
+
+void rec_preorder(Bst *t, void (*visit)(Bst*)){
+
+}

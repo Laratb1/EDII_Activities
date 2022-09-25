@@ -17,4 +17,12 @@ Bst *freeTree(Bst *tree);
 
 int height(Bst *tree);
 
+void preOrder(Bst *tree);
+
+void inOrder(Bst *tree);
+
+void posOrder(Bst *tree);
+
+void rec_preorder(Bst *t, void (*visit)(Bst*));
+
 #endif 
